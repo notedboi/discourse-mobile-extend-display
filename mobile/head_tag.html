@@ -1,0 +1,15 @@
+<script type="text/x-handlebars" data-template-name="list/posts-count-column.hbr">
+<div class='num posts-map posts {{view.likesHeat}}' title='{{view.title}}'>
+  <button class="btn-link posts-map badge-posts {{view.likesHeat}}">
+    {{raw-plugin-outlet name="topic-list-before-reply-count"}}
+    {{#if topic.like_count}}
+     {{d-icon "far-heart"}} 
+    {{number topic.like_count noTitle="true" ariaLabel=view.title}}
+    {{/if}}
+     {{#if topic.replyCount}}
+   {{d-icon 'far-comment-alt'}}
+    {{number topic.replyCount noTitle="true" ariaLabel=view.title}}
+    {{/if}}
+  </button>
+</div>
+</script>

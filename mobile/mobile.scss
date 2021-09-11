@@ -1,0 +1,22 @@
+.btn-link.posts-map.badge-posts .d-icon-far-comment-alt{
+color: var(--tertiary);
+height:0.8em;
+width:0.8em;
+}
+
+.btn-link.posts-map.badge-posts .d-icon-far-heart{
+color: var(--love);
+height:0.8em;
+width:0.8em;
+}
+
+div.right {
+    position:relative;
+}
+
+div.right .pull-right 
+{
+position: absolute;
+    top: 0;
+    right: 0;
+}
