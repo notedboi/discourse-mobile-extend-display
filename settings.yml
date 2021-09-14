@@ -1,5 +1,5 @@
 like_icon: 
-  default: far-love
+  default: far-heart
   description: 
     en: "icon displayed before likes count"
     zh: 显示在喜欢数前面的图标
