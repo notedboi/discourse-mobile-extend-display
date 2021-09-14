@@ -1,9 +1,9 @@
 {
-  "name": "Mobile likes and comments",
+  "name": "Mobile Extend Display",
   "component": true,
-  "license_url": null,
-  "about_url": null,
-  "authors": null,
+  "license_url": "https://github.com/notedboi/discourse-mobile-extend-display/blob/main/LICENSE",
+  "about_url": "https://meta.discourse.org/t/display-replies-and-likes-count-in-mobile-view/203473",
+  "authors": "https://meta.discourse.org/u/th21",
   "theme_version": null,
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
