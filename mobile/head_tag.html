@@ -3,11 +3,11 @@
   <button class="btn-link posts-map badge-posts {{view.likesHeat}}">
     {{raw-plugin-outlet name="topic-list-before-reply-count"}}
     {{#if topic.like_count}}
-     {{d-icon '{{theme-setting like_icon}}' }} 
+     {{d-icon theme-setting like_icon }} 
     {{number topic.like_count noTitle="true" ariaLabel=view.title}}
     {{/if}}
      {{#if topic.replyCount}}
-   {{d-icon '{{theme-setting reply_icon}}'}}
+   {{d-icon theme-setting reply_icon }}
     {{number topic.replyCount noTitle="true" ariaLabel=view.title}}
     {{/if}}
   </button>
