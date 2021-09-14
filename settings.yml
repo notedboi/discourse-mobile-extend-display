@@ -1,0 +1,21 @@
+like_icon:
+  type: 'string'
+   default: 'far-love'
+     description: 
+      en: "icon displayed before likes count"
+      zh: "显示在喜欢数前面的图标"
+
+reply_icon:
+  type: 'string'
+   default: 'far-comment-alt'
+        description: 
+          en: "icon displayed before replies count"
+          zh: "显示在回复数前面的图标"
+
+svg_icons: 
+  default: 'far-comment-alt'
+  type: 'list'
+  list_type: 'compact'
+   description: 
+    en: "include extra font-awesome icon name you want to use"
+    zh: "输入想用于图标的所有非默认font-awesome图标名称"
