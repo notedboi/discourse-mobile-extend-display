@@ -4,6 +4,12 @@ like_icon:
     en: "icon displayed before likes count"
     zh_CN: "显示在喜欢数前面的图标"
   type: string
+display_like_count: 
+  default: false
+  description: 
+    en: "display like count"
+    zh_CN: "显示喜欢的数量"
+  type: bool
 reply_icon: 
   default: far-comment-alt
   description: 
