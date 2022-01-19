@@ -10,6 +10,12 @@ display_like_count:
     en: "display like count"
     zh_CN: "显示喜欢的数量"
   type: bool
+display_replay_count: 
+  default: true
+  description: 
+    en: "display reply count"
+    zh_CN: "显示回复的数量"
+  type: bool
 reply_icon: 
   default: far-comment-alt
   description: 
