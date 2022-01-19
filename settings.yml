@@ -10,7 +10,7 @@ display_like_count:
     en: "display like count"
     zh_CN: "显示喜欢的数量"
   type: bool
-display_replay_count: 
+display_relay_count: 
   default: true
   description: 
     en: "display reply count"
