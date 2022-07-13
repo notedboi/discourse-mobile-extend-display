@@ -6,12 +6,13 @@
       {{#if (theme-setting 'allow_user_setting')}}
           {{#if currentUser.custom_fields.[(theme-setting 'user_field')]}}
             {{#if topic.like_count}}
+            <strong>{{currentUser.custom_fields.[(theme-setting 'user_field')]}}</strong>!
               {{d-icon (theme-setting 'like_icon') }} 
               {{number topic.like_count noTitle="true" ariaLabel=view.title}}
             {{/if}}
           {{/if}}
         {{else}}
-          {{#if (theme-setting 'display_like_c\ount')  }}
+          {{#if (theme-setting 'display_like_count')  }}
             {{#if topic.like_count}}
               {{d-icon (theme-setting 'like_icon') }} 
               {{number topic.like_count noTitle="true" ariaLabel=view.title}}
