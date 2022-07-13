@@ -4,6 +4,8 @@
       {{raw-plugin-outlet name="topic-list-before-reply-count"}}
 
       {{#if (theme-setting 'allow_user_setting')}}
+      <strong>{{(theme-setting 'user_field')}}</strong>
+      <strong>{{ currentUser.custom_fields.user_field_6 }}</strong>
       <strong>{{currentUser.custom_fields.[(theme-setting 'user_field')]}}</strong>
           {{#if currentUser.custom_fields.[(theme-setting 'user_field')]}}
             {{#if topic.like_count}}
