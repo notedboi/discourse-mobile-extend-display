@@ -1,0 +1,11 @@
+<script type="text/discourse-plugin" version="0.8">
+  var TopicListComponent = require('discourse/components/topic-list').default;
+  
+  const user = Discourse.User.current();
+  
+  const flag = user.custom_fields['user_field_6']
+
+  TopicListComponent.reopen({
+      showLikes: flag
+  });
+  </script>

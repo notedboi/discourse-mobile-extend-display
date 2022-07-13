@@ -4,6 +4,18 @@ like_icon:
     en: "icon displayed before likes count"
     zh_CN: "显示在喜欢数前面的图标"
   type: string
+allow_user_setting: 
+  default: false
+  description: 
+    en: "use user perference to override default setting"
+    zh_CN: "由用户选择是否显示赞"
+  type: bool
+user_field:
+  default: user_field_1
+  description: 
+    en: "user field name to get user setting"
+    zh_CN: "用于用户自定义的用户字段名称"
+  type: string
 display_like_count: 
   default: false
   description: 
