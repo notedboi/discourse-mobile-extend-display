@@ -4,9 +4,10 @@
       {{raw-plugin-outlet name="topic-list-before-reply-count"}}
 
       {{#if (theme-setting 'allow_user_setting')}}
+      <strong>{{currentUser.custom_fields.[(theme-setting 'user_field')]}}</strong>
           {{#if currentUser.custom_fields.[(theme-setting 'user_field')]}}
             {{#if topic.like_count}}
-            <strong>{{currentUser.custom_fields.[(theme-setting 'user_field')]}}</strong>!
+           
               {{d-icon (theme-setting 'like_icon') }} 
               {{number topic.like_count noTitle="true" ariaLabel=view.title}}
             {{/if}}
