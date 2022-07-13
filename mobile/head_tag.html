@@ -1,11 +1,10 @@
 <script type="text/x-handlebars" data-template-name="list/posts-count-column.hbr">
-{{#if (and shouldShow discoveryRoute)}}
 <div class='num posts-map posts {{view.likesHeat}}' title='{{view.title}}'>
   <button class="btn-link posts-map badge-posts {{view.likesHeat}}">
     {{raw-plugin-outlet name="topic-list-before-reply-count"}}
 
     {{#if (theme-setting 'allow_user_setting')}}
-        {{#if currentUser.custom_fields.user_field_6}}
+        {{#if currentUser.custom_fields.[(theme-setting 'user_field')]}}
           {{#if topic.like_count}}
             {{d-icon (theme-setting 'like_icon') }} 
             {{number topic.like_count noTitle="true" ariaLabel=view.title}}
@@ -29,3 +28,5 @@
 </div>
 {{/if}}
 </script>
+
+
