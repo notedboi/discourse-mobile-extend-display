@@ -1,32 +1,31 @@
 <script type="text/x-handlebars" data-template-name="list/posts-count-column.hbr">
-<div class='num posts-map posts {{view.likesHeat}}' title='{{view.title}}'>
-  <button class="btn-link posts-map badge-posts {{view.likesHeat}}">
-    {{raw-plugin-outlet name="topic-list-before-reply-count"}}
+  <div class='num posts-map posts {{view.likesHeat}}' title='{{view.title}}'>
+    <button class="btn-link posts-map badge-posts {{view.likesHeat}}">
+      {{raw-plugin-outlet name="topic-list-before-reply-count"}}
 
-    {{#if (theme-setting 'allow_user_setting')}}
-        {{#if currentUser.custom_fields.[(theme-setting 'user_field')]}}
-          {{#if topic.like_count}}
-            {{d-icon (theme-setting 'like_icon') }} 
-            {{number topic.like_count noTitle="true" ariaLabel=view.title}}
+      {{#if (theme-setting 'allow_user_setting')}}
+          {{#if currentUser.custom_fields.[(theme-setting 'user_field')]}}
+            {{#if topic.like_count}}
+              {{d-icon (theme-setting 'like_icon') }} 
+              {{number topic.like_count noTitle="true" ariaLabel=view.title}}
+            {{/if}}
           {{/if}}
-        {{/if}}
-      {{else}}
-        {{#if (theme-setting 'display_like_c\ount')  }}
-          {{#if topic.like_count}}
-            {{d-icon (theme-setting 'like_icon') }} 
-            {{number topic.like_count noTitle="true" ariaLabel=view.title}}
+        {{else}}
+          {{#if (theme-setting 'display_like_c\ount')  }}
+            {{#if topic.like_count}}
+              {{d-icon (theme-setting 'like_icon') }} 
+              {{number topic.like_count noTitle="true" ariaLabel=view.title}}
+            {{/if}}
           {{/if}}
-        {{/if}}
-    {{/if}}
-    {{#if (theme-setting 'display_reply_count') }}
-      {{#if topic.replyCount}}
-        {{d-icon (theme-setting 'reply_icon') }}
-        {{number topic.replyCount noTitle="true" ariaLabel=view.title}}
       {{/if}}
-    {{/if}}
-  </button>
-</div>
-{{/if}}
+      {{#if (theme-setting 'display_reply_count') }}
+        {{#if topic.replyCount}}
+          {{d-icon (theme-setting 'reply_icon') }}
+          {{number topic.replyCount noTitle="true" ariaLabel=view.title}}
+        {{/if}}
+      {{/if}}
+    </button>
+  </div>
 </script>
 
 
