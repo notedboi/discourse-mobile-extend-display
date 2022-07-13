@@ -5,9 +5,9 @@
 
       {{#if (theme-setting 'allow_user_setting')}}
       <strong>{{ theme-setting 'user_field' }}</strong>
-      <strong>{{ currentUser.custom_fields.user_field_6 }}</strong>
-      <strong>{{currentUser.custom_fields.[(theme-setting 'user_field')]}}</strong>
-          {{#if currentUser.custom_fields.[(theme-setting 'user_field')]}}
+      <strong>{{ user.custom_fields.user_field_6 }}</strong>
+      <strong>{{user.custom_fields.[(theme-setting 'user_field')]}}</strong>
+          {{#if user.custom_fields.[(theme-setting 'user_field')]}}
             {{#if topic.like_count}}
            
               {{d-icon (theme-setting 'like_icon') }} 
