@@ -5,7 +5,8 @@
 
       {{#if (theme-setting 'allow_user_setting')}}
       <strong>{{ theme-setting 'user_field' }}</strong>
-      <strong>{{ user.custom_fields.user_field_6 }}</strong>
+      <strong>{{ user.name }}</strong>
+      <strong>{{ user.custom_fields.signature_raw }}</strong>
       <strong>{{user.custom_fields.[(theme-setting 'user_field')]}}</strong>
           {{#if user.custom_fields.[(theme-setting 'user_field')]}}
             {{#if topic.like_count}}
