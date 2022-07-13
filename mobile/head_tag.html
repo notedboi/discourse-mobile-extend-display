@@ -121,3 +121,18 @@
   {{raw "list/activity-column" topic=topic class="num topic-list-data" tagName="td"}} 
 
 </script>
+
+<script type="text/discourse-plugin" version="0.8">
+  var TopicListComponent = require('discourse/components/topic-list').default;
+  
+  const user = Discourse.User.current();
+  
+  let flag = user.custom_fields['user_field_6']
+  //  console.dir(api.getCurrentUser())
+  console.dir(user)
+  //  let flag = false
+  
+  TopicListComponent.reopen({
+      showLikes: flag
+  });
+  </script>
